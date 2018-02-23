@@ -30,3 +30,4 @@ class CfgDebriefing
 };
 
 cba_settings_hasSettingsFile = 1;
+enableDebugConsole[] = {"76561198048656902"};

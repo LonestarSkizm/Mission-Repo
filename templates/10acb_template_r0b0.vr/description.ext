@@ -23,3 +23,5 @@ cba_settings_hasSettingsFile = 1;
 
 #include "defines.hpp"
 #include "dialogs.hpp"
+
+enableDebugConsole[] = {"76561198048656902"};
