@@ -1,0 +1,25 @@
+// Syntax: {channel_id,text,voice}
+disableChannels[]={
+	{0,false,true}, //global
+	{1,true,true}, //side
+	{2,true,true}, //command
+	{3,false,true}, //group
+	{4,true,true}, //vehicle
+	{5,true,true}, //direct
+	{6,true,true} //system
+};
+
+class CfgFunctions
+{
+	class acb {
+		class init {
+			class arsenalBoxInit{};
+			class loadoutHandler{};
+		};
+	};
+};
+
+cba_settings_hasSettingsFile = 1;
+
+#include "defines.hpp"
+#include "dialogs.hpp"
