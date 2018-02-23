@@ -1,5 +1,7 @@
 private _idact_build = -1;
 private _idact_arsenal = -1;
+private _idact_ace3arsenal = -1;
+private _idact_acbarsenal = -1;
 private _idact_buildfob = -1;
 private _idact_redeploy = -1;
 private _idact_tutorial = -1;
@@ -109,6 +111,30 @@ while {true} do {
 		if (_idact_arsenal != -1) then {
 			player removeAction _idact_arsenal;
 			_idact_arsenal = -1;
+		};
+	};
+	
+	// ACE3 new arsenal	
+	if ((_fobdistance < _distredeploy || count KP_liberation_neararsenal != 0 || count KP_liberation_nearspawn != 0 || (player distance startbase) < 200) && alive player && vehicle player == player) then {
+		if (_idact_ace3arsenal == -1) then {
+			_idact_ace3arsenal = player addAction ["<t color='#00ff00'>ACE3 Arsenal</t> <img size='2' image='res\ui_arsenal.paa'/>",{[player, player, true] call ace_arsenal_fnc_openBox;},"",-980,true,true,"","build_confirmed == 0"];
+		};
+	} else {
+		if (_idact_ace3arsenal != -1) then {
+			player removeAction _idact_ace3arsenal;
+			_idact_ace3arsenal = -1;
+		};
+	};
+	
+	// ACB extended arsenal	
+	if ((_fobdistance < _distredeploy || count KP_liberation_neararsenal != 0 || count KP_liberation_nearspawn != 0 || (player distance startbase) < 200) && alive player && vehicle player == player) then {
+		if (_idact_acbarsenal == -1) then {
+			_idact_acbarsenal = player addAction ["<t color='#00ff00'>PRG Arsenal</t> <img size='2' image='res\ui_arsenal.paa'/>",{createDialog "ars_Dialog";},"",-980,true,true,"","build_confirmed == 0"];
+		};
+	} else {
+		if (_idact_acbarsenal != -1) then {
+			player removeAction _idact_acbarsenal;
+			_idact_acbarsenal = -1;
 		};
 	};
 
