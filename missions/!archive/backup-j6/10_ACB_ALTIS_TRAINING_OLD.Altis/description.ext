@@ -1,0 +1,288 @@
+class CfgOrbat
+{
+	class 10th_ACB
+	{
+		side = "West";
+		size = "Brigade"
+		type = "HQ";
+		subordinates[] = {"10th_BNHQ",};
+		text = "10th Armored Cavalry Brigade";
+		textShort = "10th ACB";
+		color[] = {0.42, 0.26, 0.03, 1};
+	};
+	
+	class 10th_BNHQ
+	{
+	side = "West";
+	size = "Battalion"
+	type = "HQ";
+	subordinates[] = {"10th_Apache","10th_247th","10th_323rd"};
+	text = "1st Battalion HQ, 10th ACB";
+	textShort = "BN HQ";
+	color[] = {0.5, 0.5, 0.5, 1};
+	};
+
+		class 10th_Apache
+		{
+		side = "West";
+		size = "Company"
+		type = "MechanizedInfantry";
+		subordinates[] = {"Apache_1","Apache_2","Apache_3",};
+		text = "Alpha Co (Apache), 1st BN, 10th ACB";
+		textShort = "Alpha Co (Apache)";
+		color[] = {0.17, 0.42, 0.03, 1}; //color[] = {39, 95, 7, 1};
+		
+		};
+		
+			class Apache_1
+			{
+			side = "West";
+			size = "Platoon";
+			subordinates[] = {"Apache_1_1","Apache_1_2","Apache_1_3","Apache_1_4"};
+			text = "1st Plt";
+			textShort = "1st Plt";
+			type = "Infantry";
+			color[] = {0.17, 0.42, 0.03, 1};
+			};
+				class Apache_1_1
+				{
+				side = "West";
+				size = "Squad";
+				text = "1st Sqd";
+				textShort = "1st Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_1_2
+				{
+				side = "West";
+				size = "Squad";
+				text = "2nd Sqd";
+				textShort = "2nd Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_1_3
+				{
+				side = "West";
+				size = "Squad";
+				text = "3rd Sqd";
+				textShort = "3rd Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_1_4
+				{
+				side = "West";
+				size = "Squad";
+				text = "4th Sqd";
+				textShort = "4th Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+			
+			class Apache_2
+			{
+			side = "West";
+			size = "Platoon";
+			subordinates[] = {"Apache_2_1","Apache_2_2","Apache_2_3","Apache_2_4"};
+			text = "2nd Plt";
+			textShort = "2nd Plt";
+			type = "Infantry";
+			color[] = {0.17, 0.42, 0.03, 1};
+			};
+				class Apache_2_1
+				{
+				side = "West";
+				size = "Squad";
+				text = "1st Sqd";
+				textShort = "1st Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_2_2
+				{
+				side = "West";
+				size = "Squad";
+				text = "2nd Sqd";
+				textShort = "2nd Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_2_3
+				{
+				side = "West";
+				size = "Squad";
+				text = "3rd Sqd";
+				textShort = "3rd Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_2_4
+				{
+				side = "West";
+				size = "Squad";
+				text = "4th Sqd";
+				textShort = "4th Sqd";
+				type = "Infantry";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+			
+			class Apache_3
+			{
+			side = "West";
+			size = "Platoon";
+			subordinates[] = {"Apache_3_1","Apache_3_2","Apache_3_3","Apache_3_4"};
+			text = "3rd Plt";
+			textShort = "3rd Plt";
+			type = "Armored";
+			color[] = {0.17, 0.42, 0.03, 1};
+			};
+				class Apache_3_1
+				{
+				side = "West";
+				size = "Squad";
+				text = "1st Vic";
+				textShort = "1st Vic";
+				type = "Armored";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_3_2
+				{
+				side = "West";
+				size = "Squad";
+				text = "2nd Vic";
+				textShort = "2nd Vic";
+				type = "Armored";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_3_3
+				{
+				side = "West";
+				size = "Squad";
+				text = "3rd Vic";
+				textShort = "3rd Vic";
+				type = "Armored";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+				
+				class Apache_3_4
+				{
+				side = "West";
+				size = "Squad";
+				text = "4th Vic";
+				textShort = "4th Vic";
+				type = "Armored";
+				color[] = {0.17, 0.42, 0.03, 1};
+				};
+		
+		class 10th_247th
+		{
+		side = "West";
+		size = "Squadron"
+		type = "CombatAviation";
+		subordinates[] = {"247th_1"};
+		text = "247th Detatchment HQ, 10th ACB";
+		textShort = "247th Detatchment HQ";
+		color[] = {0.41, 0.52, 0.80, 1}; // color[] = {94, 117, 181, 1};
+		};
+		
+			class 247th_1
+			{
+			side = "West";
+			size = "Company";
+			subordinates[] = {"247th_1_RW","247th_1_FW","247th_1_UW"};
+			text = "Alpha Section";
+			textShort = "Alpha Section";
+			type = "CombatAviation";
+			color[] = {0.41, 0.52, 0.80, 1};
+			};
+				class 247th_1_RW
+				{
+				side = "West";
+				size = "Section";
+				text = "Rotary Flight";
+				textShort = "Rotary Flight";
+				type = "Helicopter";
+				color[] = {0.41, 0.52, 0.80, 1};
+				};
+				
+				class 247th_1_FW
+				{
+				side = "West";
+				size = "Section";
+				text = "Fixed Wing Flight";
+				textShort = "Fixed Wing Flight";
+				type = "Fighter";
+				color[] = {0.41, 0.52, 0.80, 1};
+				};
+				
+				class 247th_1_UW
+				{
+				side = "West";
+				size = "Section";
+				text = "UAV Operations";
+				textShort = "UAV Operations";
+				type = "UAV";
+				color[] = {0.41, 0.52, 0.80, 1};
+				};
+		
+		class 10th_323rd
+		{
+		side = "West";
+		size = "Company"
+		type = "Artillery";
+		subordinates[] = {"323rd_1"};
+		text = "323rd Fires Detachment HQ, 10th ACB";
+		textShort = "323rd Fires Detachment HQ";
+		color[] = {0.27, 0.09, 0.04, 1}; //color[] = {62, 21, 10, 1};
+		};
+		
+			class 323rd_1
+			{
+			side = "West";
+			size = "Platoon";
+			subordinates[] = {"323rd_1_1","323rd_1_2","323rd_1_3"};
+			text = "Alpha Section";
+			textShort = "Alpha Section";
+			type = "Artillery";
+			color[] = {0.27, 0.09, 0.04, 1};
+			};
+				class 323rd_1_1
+				{
+				side = "West";
+				size = "Squad";
+				text = "Gun Team Alpha";
+				textShort = "Gun Team Alpha";
+				type = "Artillery";
+				color[] = {0.27, 0.09, 0.04, 1};
+				};
+				
+				class 323rd_1_2
+				{
+				side = "West";
+				size = "Squad";
+				text = "Gun Team Bravo";
+				textShort = "Gun Team Bravo";
+				type = "Mortar";
+				color[] = {0.27, 0.09, 0.04, 1};
+				};
+				
+				class 323rd_1_3
+				{
+				side = "West";
+				size = "Squad";
+				text = "Observer Section";
+				textShort = "Observer Section";
+				type = "Recon";
+				color[] = {0.27, 0.09, 0.04, 1};
+				};
+};
