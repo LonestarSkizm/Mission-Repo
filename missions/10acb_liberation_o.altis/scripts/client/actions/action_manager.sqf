@@ -129,7 +129,7 @@ while {true} do {
 	// ACB extended arsenal	
 	if ((_fobdistance < _distredeploy || count KP_liberation_neararsenal != 0 || count KP_liberation_nearspawn != 0 || (player distance startbase) < 200) && alive player && vehicle player == player) then {
 		if (_idact_acbarsenal == -1) then {
-			_idact_acbarsenal = player addAction ["<t color='#00ff00'>PRG Arsenal</t> <img size='2' image='res\ui_arsenal.paa'/>",{createDialog "ars_Dialog";},"",-980,true,true,"","build_confirmed == 0"];
+			_idact_acbarsenal = player addAction ["<t color='#00ff00'>ACB Arsenal</t> <img size='2' image='res\ui_arsenal.paa'/>",{createDialog "ars_Dialog";},"",-980,true,true,"","build_confirmed == 0"];
 		};
 	} else {
 		if (_idact_acbarsenal != -1) then {
