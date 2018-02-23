@@ -199,7 +199,7 @@ force force ace_medical_useLocation_SurgicalKit = 0;
 force force ace_mk6mortar_airResistanceEnabled = true;
 force force ace_mk6mortar_allowCompass = true;
 force force ace_mk6mortar_allowComputerRangefinder = false;
-force force ace_mk6mortar_useAmmoHandling = true;
+force force ace_mk6mortar_useAmmoHandling = false;
 
 // ACE Name Tags
 force force ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
